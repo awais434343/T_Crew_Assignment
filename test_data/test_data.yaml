@@ -1,0 +1,32 @@
+# test_data.yaml
+
+environments:
+  test:
+    base_url: "https://test.subscribe.stctv.com/"
+  uat:
+    base_url: "https://uat.subscribe.stctv.com/"
+  prod:
+    base_url: "https://subscribe.stctv.com/"
+
+countries:
+  SA:
+    currency: "SAR"
+    expected_packages:
+      - name: "Basic"
+        price: 15
+      - name: "Premium"
+        price: 30
+  KU:
+    currency: "KWD"
+    expected_packages:
+      - name: "Basic"
+        price: 2.5
+      - name: "Premium"
+        price: 5
+  BH:
+    currency: "BHD"
+    expected_packages:
+      - name: "Basic"
+        price: 2
+      - name: "Premium"
+        price: 4
